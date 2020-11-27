@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">
+        RegistroFBS
+    </string>
+    <string name="Correo">
+        Ingrese su Correo
+    </string>
+</resources>

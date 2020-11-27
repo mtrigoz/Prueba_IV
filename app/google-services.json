@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1058202493531",
+    "firebase_url": "https://dbfirebase-5c70b.firebaseio.com",
+    "project_id": "dbfirebase-5c70b",
+    "storage_bucket": "dbfirebase-5c70b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058202493531:android:32a0c185b9e74e02e9d57e",
+        "android_client_info": {
+          "package_name": "www.runa.registrofbs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058202493531-42mo4v1pf2li9bqaege60tijs8m49d4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.runa.registrofbs",
+            "certificate_hash": "074e1bdade8f3da7628f0c4ae5f9440a3cefd5e4"
+          }
+        },
+        {
+          "client_id": "1058202493531-9bklvmvqib9nfvj9r4r5kauoq78cd2kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Lf7prbmMVIVwPZ3RkAEVLUwGhxitk5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058202493531-9bklvmvqib9nfvj9r4r5kauoq78cd2kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

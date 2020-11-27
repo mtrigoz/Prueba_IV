@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PerfilUsiarios">
+
+    <!---INICIO-->
+    <LinearLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="0"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp">
+        <!---LINEA 1-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp">
+
+                <EditText
+                    android:id="@+id/editNombrePKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:hint="Nombre de Pokemon"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 2-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp">
+
+                <EditText
+                    android:id="@+id/editAtaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:hint="Ataque"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 3-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp">
+
+                <EditText
+                    android:id="@+id/editVida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:hint="Vida"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 4-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp">
+
+                <EditText
+                    android:id="@+id/editDefensa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:hint="Defensa"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 4-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnConsultar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/btn_c"
+                    android:text="Ver"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/btnConsultarNombrePKM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_c"
+                    android:text="Nombre Pokemon"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/btnAgregar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_c"
+                    android:text="Agregar"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 4-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:gravity="center">
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/btnEditar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_c"
+                    android:text="Editar"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_margin="5dp"
+                    android:id="@+id/btnEliminarPKM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_c"
+                    android:text="Eliminar Pokemon"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="369dp"
+                android:layout_height="110dp"
+                android:padding="5dp"
+                android:textSize="12dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPKMS"
+                    android:textSize="25dp"
+                    android:layout_width="332dp"
+                    android:layout_height="318dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

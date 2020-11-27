@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_ln_rg"
+    tools:context=".RegistroU">
+
+    <!---INICIO-->
+    <LinearLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="0"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp">
+
+        <!---LINEA 1-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:padding="5dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Titulo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:text="PANEL DE REGISTRO PARA NUEVO USUARIO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="12dp" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 2-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtRUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Ingrese nuevo Usuario:"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editRUuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="Ingrese Email"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 3-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/txtRContraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:text="Ingrese su Contraseña:"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/editRContraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="9dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:hint="**********"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+
+        <ProgressBar
+            android:id="@+id/Chequiando"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createText"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/btnGuardarNuevoU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_c"
+            android:text="Guardar Nuevo Usuario"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:onClick="IngresarBD"
+            android:textStyle="bold" />
+        <!---LINEA 8-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageRegistro"
+                    android:layout_width="67dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_listo" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 9 BOTON-REGRESAR -->
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/btnRegresarInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_c"
+            android:text="Regresar atras"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/color_ln_rg"
+    tools:context=".Inicio">
+
+    <!---INICIO-->
+    <LinearLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:shrinkColumns="0"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp">
+
+        <!---LINEA 1-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TableRow
+            android:padding="5dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Titulo"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="PANEL INICIO"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+        </TableRow>
+            <!---LINEA 1.1-->
+            <TableRow
+                android:padding="30dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txtTitulo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="INGRESE LOS CAMPOS PARA INICIAR "
+                    android:textSize="12dp"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 2-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:textSize="12dp">
+
+                <EditText
+                    android:id="@+id/editCorreo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="30dp"
+                    android:ems="15"
+                    android:gravity="center"
+                    android:hint="Ingrese su Correo"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 3-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+                android:padding="5dp"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/editContraseña"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:ems="10"
+                    android:hint="**********"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 4 BOTON-iNGRESAR-->
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btnIniciarL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_c"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <ProgressBar
+            android:id="@+id/Chequiando"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createText"
+            app:layout_constraintVertical_bias="0.26" />
+        <!---LINEA 5-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <!---LINEA 6-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TableRow
+               android:layout_margin="10dp"
+                android:padding="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageRegistro"
+                    android:layout_width="67dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_add_us" />
+            </TableRow>
+        </TableLayout>
+        <!---LINEA 7 BOTON-REGISTAR-->
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btnRegistrarNuevoU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_c"
+            android:text="Registar Nuevo Usuario"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
